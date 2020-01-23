@@ -96,3 +96,39 @@ void fileWriter (Salon x[],int n)
     }
     fclose(p);
 }
+Film addFilm(char *name, float length, char *actors, char *summary)
+{
+    Film film;
+    film.filmName = name;
+    film.length = length;
+    film.actors = actors;
+    film.summary = summary;
+    return film;
+}
+
+Sanse sanseCreator(int numSanse, char *salonNameOwner, int startTime, int day)
+{
+    Sanse sanse;
+    sanse.numSanse = numSanse;
+    sanse.salonNameOwner = salonNameOwner;
+    sanse.startTime = startTime;
+    sanse.day = day;
+    return sanse;
+}
+
+int emptyChirs(int chairs[10][5])
+{
+    int i, j, count;
+    count = 0;
+    for (i = 0; i < 10; i++)
+    {
+        for (j = 0; j < 5; j++)
+        {
+            if (chairs[i][j] == 0)
+            {
+                count++;
+            }
+        }
+    }
+    return count;
+}
