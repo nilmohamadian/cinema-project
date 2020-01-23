@@ -32,6 +32,7 @@ typedef struct Salon
     Sanse sanse[8];
     int numChair;
 } Salon;
+
 void fileReader(Salon x[],int n)
 {
     int i,j;
@@ -132,6 +133,7 @@ int emptyChirs(int chairs[10][5])
     }
     return count;
 }
+
 int main()
 {
 
